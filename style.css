@@ -18,9 +18,9 @@
 
 body {
     background-color: var(--background-color);
-    display: flex; 
+    /* display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 main {
@@ -37,10 +37,10 @@ main {
     border-radius: 15px 15px 0 0 ;
 }
 
-/* .product-image-container img {
+.product-image-container img {
     width: 100%;
     border-radius: 15px 15px 0 0;
-} */
+}
 
 .product-info-container {
     padding: 1em;
@@ -57,11 +57,12 @@ main {
 }
 
 .product-info-container h1 {
-    margin: 0.4em 0 0.4em 0;
-    color: #25282D;
+    margin: 0.5em 0 0.5em 0;
+    color: var(--btn-primary-color);
     font-family: var(--font-fraunces);
-    font-size: 31px;
+    font-size: 2.1875rem;
     font-weight: 700;
+    line-height: 35px;
     letter-spacing: -0.93px;
 }
 
@@ -69,22 +70,20 @@ main {
     color: #7F7E86;
     font-family: Montserrat;
     font-size: var(--font-size-default);
-    font-style: normal;
     font-weight: 500;
     line-height: 1.8em;
-    letter-spacing: 0.42px;
 }
 
 .product-info-container .product-price-container {
-    margin-top: 1.5em;
+    margin-top: 1em;
     display: flex;
     align-items: baseline;
 }
 
 .product-price-container h2 {
-    margin: 0 1em 0 0;
     font-family: var(--font-fraunces);
     color: var(--btn-primary-color);
+    margin: 0.1em 0 0.7em 0em ;
 }
 
 .product-price-container p {
@@ -93,8 +92,7 @@ main {
 
 .product-info-container button {
     width: 100%;
-    margin-top: 0.7em;
-    padding: 1.5em;
+    padding: 0.8em;
     background-color: var(--btn-primary-color);
     color: var(--white-color);
     border-radius: 0.5em;
@@ -105,20 +103,34 @@ main {
 
 .product-info-container button:active {
     background-color: #184131;
-}
+} 
 
-/* Desktop Screen */
+/* Desktop Screen */ 
 
 @media only screen and (min-width: 376px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     main {
         display: flex;
-        background-color: red;
-
+        width: 34em;
     }
-
     .product-image-container {
         background-image: url(images/image-product-desktop.jpg);
-        background-size: cover; 
+        width: 50%;
+        height: 410px;
+        background-size: cover;
+        border-radius: 15px 0 0 15px;
+    }
+    .product-info-container {
+        width: 50%;
+        height: 410px;
+        border-radius: 0 15px 15px 0;
     }
 }
