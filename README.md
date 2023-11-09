@@ -9,8 +9,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution]([https://your-solution-url.com](https://github.com/rabin-thami/Frontend-Mentor---Product-preview-card-component-solution/tree/main))
+- Live Site URL: [live site](https://rabin-product-component.netlify.app/)
 
 ## My process
 
